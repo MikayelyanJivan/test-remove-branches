@@ -7,6 +7,7 @@ $remoteName = 'origin';
 $command = "git ls-remote --heads $remoteName";
 $output = shell_exec($command);
 
+
 // Process the output to get the remote branch names
 $branches = explode("\n", $output);
 $branches = array_map('trim', $branches);
